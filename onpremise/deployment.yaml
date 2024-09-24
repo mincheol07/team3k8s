@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: Harbor/project/nginx:54
+        image: Harbor/project/nginx:55
         resources:
           request:
             cpu: 500m
@@ -33,7 +33,7 @@ spec:
           initialDelaySeconds: 30
           periodSeconds: 5
       - name: flaskapp
-        image: Harbor/project/flaskapp:54
+        image: Harbor/project/flaskapp:55
         resources:
           request:
             cpu: 1
