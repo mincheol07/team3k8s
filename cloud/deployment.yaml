@@ -1,1 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: awsapp-deployment
+  labels:
+    app: awsapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: awsapp
+  template:
+    metadata:
+      labels:
+        app: awsapp
+    spec:
+      containers:
+      - name: awsapp-container
+        image: 339712848231.dkr.ecr.ap-northeast-2.amazonaws.com/flaskapp:64-flask
+        ports:
+        - containerPort: 80
+      - name: nginx-container
+        image: 339712848231.dkr.ecr.ap-northeast-2.amazonaws.com/nginx:69-nginx
+        ports:
+        - containerPort: 8080
+
  
