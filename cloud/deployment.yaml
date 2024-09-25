@@ -20,7 +20,7 @@ spec:
         ports:
         - containerPort: 80
       - name: nginx-container
-        image: 339712848231.dkr.ecr.ap-northeast-2.amazonaws.com/nginx:74-nginx
+        image: 339712848231.dkr.ecr.ap-northeast-2.amazonaws.com/nginx:75-nginx
         ports:
         - containerPort: 8080
 
