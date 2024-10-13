@@ -13,3 +13,4 @@
 **ArgoCD**, **Jenkins**, **ECS**, **Harbor**
 
 ### 아키텍처 (CI/CD)
+![cicid](https://github.com/mincheol07/team3k8s/blob/main/cicd.jpg)
